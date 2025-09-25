@@ -1,0 +1,36 @@
+/*
+Author: Wanjia Liang
+Date: 2025-09-25
+*/
+body {
+    background-color: rgb(190, 8, 145);
+}
+
+h1 {
+    color: rgb(205, 209, 205);
+    font-size: 36px;
+}
+
+h2 {
+    color: rgb(14, 231, 46);
+    font-size: 24px;
+}
+
+p {
+    color: black;
+}
+
+a {
+    color: rgb(255, 0, 0);
+    font-style: italic;
+}
+
+li {
+    color: rgb(0, 0, 255);
+    list-style-type: square;
+}
+
+ol {
+    color: bisque;
+    list-style-type: decimal;
+}
