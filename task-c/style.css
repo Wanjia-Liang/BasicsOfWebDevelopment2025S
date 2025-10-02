@@ -1,0 +1,23 @@
+/*
+Author: Wanjia Liang
+Date: 2025-09-18
+*/
+.cc-image {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+audio {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+}
+
+video {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+}
