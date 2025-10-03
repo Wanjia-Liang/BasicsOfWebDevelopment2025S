@@ -2,13 +2,14 @@
 Author: Wanjia Liang
 Date: 2025-09-18
 */
-.cc-image {
+img {
     display: block;
     margin: 0 auto;
+    height: auto;
     width: 100%;
     max-width: 500px;
-    height: auto;
 }
+
 
 audio {
     display: block;
