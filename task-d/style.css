@@ -1,0 +1,56 @@
+/*
+Author: Wanjia Liang
+Date: 2025-09-28
+*/
+img {
+    display: block;
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    color: rgb(148, 148, 148);
+    font-size: 20px;
+}
+
+.listing {
+    list-style-type: square;
+    color: green;
+}
+
+#unique-Id {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+p {
+    font-family: cursive;
+    text-align: left;
+    line-height: 10px;
+}
+
+ul li {
+    font-style: italic;
+    font-family: sans-serif;
+    color: blue;
+}
+
+a {
+    color: orange;
+    font-weight: bold;
+
+}
+
+a[target="_blank"]:hover {
+    color: grey;
+    font-weight: bold;
+}
+
+img[alt] {
+    border: 2px solid rgb(217, 8, 154);
+}
