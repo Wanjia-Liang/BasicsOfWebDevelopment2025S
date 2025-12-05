@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weekly Timetable</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <!--
+    Author: Ville Heikkiniemi
+    Modified by: Wanjia Liang
+    Date: 2025-12-06
+  -->
+
+    <header class="site-header">
+        <h1>Registration page</h1>
+    </header>
+
+    <main class="content">
+        <div class="top-grid">
+            <section class="controls" aria-label="Registration form">
+                <h2 class="controls-title">Register</h2>
+
+                <form id="registrationForm" novalidate>
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <div class="form-row">
+                        <label for="fullName">Full name</label>
+                        <input id="fullName" name="fullName" type="text" placeholder="e.g., Jane Doe" required>
+                        <span class="error" id="fullNameError"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="name@example.com" required>
+                        <span class="error" id="emailError"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="phone">Phone number</label>
+                        <input id="phone" name="phone" type="tel" placeholder="+358401234567">
+
+                        <span class="error" id="phoneError"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="birthDate">Birth date</label>
+                        <input id="birthDate" name="birthDate" type="date">
+                        <span class="error" id="birthDateError"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <label class="terms-label">
+                            <input id="terms" name="terms" type="checkbox">
+                            I accept the terms and conditions.
+                        </label>
+                        <span class="error" id="termsError"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <button id="submitBtn" type="submit" class="btn">Add registration</button>
+                        <button id="clearBtn" type="reset" class="btn btn-secondary">Clear</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <!-- Table -->
+        <div class="table-wrap">
+            <table class="table" id="registrationTable">
+                <thead>
+                    <tr>
+                        <th>Timestamp</th>
+                        <th>Full name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Birth date</th>
+                        <th>Terms accepted</th>
+                    </tr>
+                </thead>
+                <tbody id="registrationsBody">
+                    <!-- JS will append <tr> rows here -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+</body>
+
+</html>

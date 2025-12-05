@@ -2,15 +2,33 @@
 Author: Wanjia Liang
 Date: 2025-09-08
 */
-body {
-    background-color: rgb(59, 54, 54);
+input {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 10rem;
 }
 
-h1 {
-    font-size: 40px;
-    color: greenyellow;
+/* 默认隐藏错误信息 */
+.error {
+    color: #c00;
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+    display: none;
 }
 
-p {
-    color: rgb(107, 107, 247);
+/* 输入有效时 */
+input:valid {
+    border-color: green;
+}
+
+/* 输入无效时（已输入内容） */
+input:invalid:not(:placeholder-shown) {
+    border-color: red;
+}
+
+/* 无效时显示错误文本 */
+input:invalid:not(:placeholder-shown)+.error {
+    display: block;
 }

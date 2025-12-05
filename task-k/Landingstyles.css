@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #dcdcca;
+    color: #333;
+
+}
+
+header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    padding: 2px 4px;
+    color: #024892;
+    font-weight: 600;
+    border-color: #024892;
+    border-bottom-style: solid;
+}
+
+.hero {
+    background: url('https://live.staticflickr.com/4068/4398321372_cf6841b555_b.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 2rem;
+
+}
+
+.hero h1 {
+    font-size: 3.8rem;
+    margin-bottom: 1rem;
+    margin-top: 13rem;
+    color: #000000;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 5rem;
+    color: #000000;
+}
+
+.btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.3rem;
+    font-weight: 650;
+    background-color: #024892;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    touch-action: manipulation;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #013568;
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+.section {
+    padding: 4rem 2rem;
+    margin: auto;
+}
+
+.introduction h2 {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.6rem;
+
+}
+
+h3 {
+    color: #024892;
+    font-size: 1rem;
+
+    text-decoration: underline;
+}
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.step {
+    width: 300px;
+    margin: 1rem;
+    text-align: center;
+}
+
+#Fleets {
+    top: -120px;
+    position: relative;
+}
+
+#Fleets h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #000000
+}
+
+.fleet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.fleet-item {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    width: 450px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    border: none;
+    text-align: center;
+
+}
+
+.fleet-item img {
+    width: 355px;
+    height: 190px;
+    border-radius: 8px;
+}
+
+.contactsAndApp {
+    background-color: #024892;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.AppDownload {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+.AppDownload img {
+    width: 120px;
+    height: 35px;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.contactsAndApp h3 {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+
+}
+
+footer p {
+    text-align: center;
+    margin-top: 0rem;
+
+}
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 0.5rem 0.5rem 0 0;
+    }
+
+    .fleet {
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .contactsAndApp {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

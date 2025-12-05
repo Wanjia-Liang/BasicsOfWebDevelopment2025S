@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OnWheel - Freedom on Wheels</title>
+    <link rel="stylesheet" href="Orderstyles.css" />
+    <script src="order.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="OnWheel Logo">
+        </div>
+        <nav>
+            <a href="Landing.html">Home</a>
+            <a href="Catalogue.html">Cars</a>
+            <a href="#"><img src="globe_11086349.png" alt="Globe icon"
+                    style="width: 1rem;height:auto;margin-bottom: -0.1rem;"> En|€</a>
+            <a href="#">Support</a>
+            <a href="#">Log in/Register</a>
+        </nav>
+    </header>
+    <main>
+        <section class="BookPage">
+            <div class="selectedCar">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Toyota_Corolla_Hybrid_%28E210%29_IMG_4338.jpg/960px-Toyota_Corolla_Hybrid_%28E210%29_IMG_4338.jpg"
+                    alt="Toyota Corolla" loading="lazy">
+                <h2>Toyota Corolla 1.2L </h2>
+                <h3>Available: 06.12.2025–28.12.2025, Helsinki Airport. One-way rental available.</h3>
+                <h3>Price: €45/day</h3>
+            </div>
+            <div class="Book-content">
+                <h1>Book Now!</h1>
+                <form action="submit-order.html" method="post">
+                    <label for="item">Select your car</label>
+                    <select id="item" name="car" disabled>
+                        <option value="toyota-corolla-12">Toyota Corolla 1.2L</option>
+                    </select>
+                    <input type="hidden" name="car" value="toyota-corolla-12">
+                    <br>
+                    <label>Pick-up Date: <input type="date" id="pickupDate" name="pickupDate" required></label>
+                    <br><label>Pick-up Location: <select id="pickupLocation" name="pickupLocation" disabled>
+                            <option value="HEL">Helsinki Airport</option>
+                        </select></label>
+                    <input type="hidden" name="pickupLocation" value="HEL-Airport">
+                    <br>
+                    <label>Return Date: <input type="date" id="returnDate" name="returnDate" required></label>
+                    <br>
+                    <label>Return Location: <select id="returnLocation" name="returnLocation" required>
+                            <option required>Helsinki Airport</option>
+                            <option required>Oulu Train Station</option>
+                            <option required>Helsinki Train Station</option>
+                            <option required>Tampere Train Station</option>
+                        </select></label>
+                    <br>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="country">Driver's License Issue Country:</label>
+                    <select id="country" name="country" required>
+                        <option value="" disabled selected>Select your country</option>
+                        <optgroup label="Nordic Countries">
+                            <option value="Finland">Finland</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="Norway">Norway</option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Iceland">Iceland</option>
+                        </optgroup>
+
+                        <optgroup label="EU / EEA Countries">
+                            <option value="Estonia">Estonia</option>
+                            <option value="Latvia">Latvia</option>
+                            <option value="Lithuania">Lithuania</option>
+                            <option value="Germany">Germany</option>
+                            <option value="France">France</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Spain">Spain</option>
+                            <option value="Netherlands">Netherlands</option>
+                            <option value="Belgium">Belgium</option>
+                            <option value="Poland">Poland</option>
+                            <option value="Czech Republic">Czech Republic</option>
+                            <option value="Austria">Austria</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Ireland">Ireland</option>
+                            <option value="Greece">Greece</option>
+                        </optgroup>
+
+                        <optgroup label="Other Countries">
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="United States">United States</option>
+                            <option value="Canada">Canada</option>
+                            <option value="China">China</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Australia">Australia</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <label for="license">Driver's License Number:</label>
+                    <input type="text" id="license" name="license" required>
+                    <br>
+
+                    <button class="btn" type="submit">Submit Order</button>
+                </form>
+            </div>
+
+        </section>
+        <h2>Other suggestions:</h2>
+        <section class="catalogue">
+
+            <div class="carCard">
+                <img src="https://cdn-www.pod-point.com/model-3-21-white-background.jpg?v=1611831804"
+                    alt="Tesla Model 3" loading="lazy">
+                <h3>Tesla Model 3</h3>
+                <p>Fully electric sedan with smooth acceleration and premium features.</p>
+                <p>Price: €90/day</p>
+                <button>Rent Now</button>
+            </div>
+
+            <div class="carCard">
+                <img src="https://www.bmwhk.com/content/dam/bmw/common/all-models/x-series/x7/2022/navigation/bmw-x-series-x7-modelfinder.png/jcr:content/renditions/cq5dam.resized.img.585.low.time1652775157865.png"
+                    alt="BMW X5" loading="lazy">
+                <h3>BMW X5</h3>
+                <p>Luxury SUV combining power, comfort, and advanced technology.</p>
+                <p>Price: €110/day</p>
+                <button>Rent Now</button>
+            </div>
+
+            <div class="carCard">
+                <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/149525/a-class-limousine-exterior-right-front-three-quarter-8.png?isig=0&q=80"
+                    alt="Mercedes-Benz A-Class" loading="lazy">
+                <h3>Mercedes-Benz A-Class</h3>
+                <p>Premium hatchback offering comfort, style, and excellent efficiency.</p>
+                <p>Price: €65/day</p>
+                <button>Rent Now</button>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="contactsAndApp">
+
+            <section class="AppDownload">
+                <h3>Download OnWheel App</h3>
+
+                <a href="#">
+                    <img src="Andriod-icon.png" alt="Android download" loading="lazy" />
+                </a>
+
+                <a href="#">
+                    <img src="Apple-icon.png" alt="Apple download" loading="lazy" />
+                </a>
+            </section>
+
+
+            <section class="contacts">
+                <a href="#">
+                    <h3>info.onwheel@example.com</h3>
+                </a>
+
+                <a href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png?20200512141346"
+                        alt="Instagram" loading="lazy" style="width: 30px; height: 30px;" />
+                </a>
+            </section>
+        </div>
+
+
+
+        <p>&copy; 2025 OnWheel. All rights reserved. | Terms | Privacy </p>
+
+    </footer>
+
+</body>
+
+</html>
