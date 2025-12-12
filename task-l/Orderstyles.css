@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #dcdcca;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a.active {
+    border: 5px solid rgb(245, 167, 167);
+    font-weight: 700;
+    color: black;
+
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    padding: 2px 4px;
+    color: #024892;
+    font-weight: 600;
+    border-color: #024892;
+    border-bottom-style: solid;
+}
+
+.BookPage {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+    background-color: #e4e3d2;
+}
+
+
+.selectedCar {
+    flex: 1 1 320px;
+    margin: 0;
+}
+
+.selectedCar img {
+    width: 100%;
+    max-width: 672px;
+    height: auto;
+    aspect-ratio: 5/3;
+    border-radius: 8px;
+    display: block;
+}
+
+h2 {
+    text-align: center;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+h3 {
+    color: #024892;
+    font-size: 1.3rem;
+}
+
+
+.Book-content {
+    flex: 1 1 320px;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.Book-content h1 {
+    margin-top: 0;
+}
+
+.Book-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.Book-content label {
+    font-weight: 600;
+}
+
+.Book-content input,
+.Book-content select {
+    padding: 0.4rem 0.6rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    max-width: 100%;
+}
+
+
+.btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.3rem;
+    font-weight: 650;
+    background-color: #024892;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    touch-action: manipulation;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #013568;
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+.catalogue {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+}
+
+.carCard {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.carCard img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+
+.carCard h3,
+.carCard p {
+    margin: 1rem 0 0.5rem 0;
+    color: #101010;
+    font-size: larger;
+}
+
+.carCard button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #024892;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contactsAndApp {
+    background: #024892;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.AppDownload {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+.AppDownload img {
+    width: 120px;
+    height: 35px;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+.contactsAndApp h3 {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+
+footer p {
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 0.5rem 0.5rem 0 0;
+    }
+
+
+    .BookPage {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .selectedCar {
+        margin: 1rem;
+    }
+
+    .selectedCar img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .Book-content {
+        margin: 1rem;
+        width: auto;
+        border-radius: 8px;
+        box-shadow: none;
+    }
+
+    .catalogue {
+        grid-template-columns: 1fr;
+    }
+
+    .contactsAndApp {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+}

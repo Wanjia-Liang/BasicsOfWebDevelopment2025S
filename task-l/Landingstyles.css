@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #dcdcca;
+    color: #333;
+}
+
+header {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav a {
+    margin-left: 1.5rem;
+    padding: 2px 4px;
+    text-decoration: none;
+    color: #024892;
+    font-weight: 600;
+    border-bottom: 1px solid #024892;
+}
+
+nav a.active {
+    border: 5px solid rgb(245, 167, 167);
+    font-weight: 700;
+    color: #000;
+    cursor: default;
+}
+
+.hero {
+    background: url("https://live.staticflickr.com/4068/4398321372_cf6841b555_b.jpg") center/cover no-repeat;
+    text-align: center;
+    padding: 6rem 2rem;
+    color: #000;
+}
+
+.hero h1 {
+    font-size: 3.8rem;
+    margin: 13rem 0 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 5rem;
+}
+
+.btn {
+    padding: .8rem 2rem;
+    font-size: 1.3rem;
+    font-weight: 650;
+    background: #024892;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color .2s, transform .1s;
+    touch-action: manipulation;
+}
+
+.btn:hover {
+    background: #013568;
+}
+
+.btn:active {
+    transform: scale(.97);
+}
+
+.section {
+    padding: 4rem 2rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.introduction h2 {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-top: 3rem;
+}
+
+h3 {
+    color: #024892;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+.step {
+    width: 300px;
+    margin: 1rem;
+    text-align: center;
+}
+
+#Fleets {
+    position: relative;
+    top: -120px;
+}
+
+#Fleets h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #000;
+}
+
+.fleet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.fleet-item {
+    width: 450px;
+    padding: 2rem;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+    border: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+.fleet-item img {
+    width: 355px;
+    height: 190px;
+    border-radius: 8px;
+}
+
+.contactsAndApp {
+    background: #024892;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.AppDownload {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+.AppDownload img {
+    width: 120px;
+    height: 35px;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+.contactsAndApp h3 {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+footer p {
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: .5rem .5rem 0 0;
+    }
+
+    .fleet {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contactsAndApp {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #dcdcca;
+    color: #333;
+
+}
+
+header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a.active {
+    border: 5px solid rgb(245, 167, 167);
+    font-weight: 700;
+    color: black;
+
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    padding: 2px 4px;
+    color: #024892;
+    font-weight: 600;
+    border-color: #024892;
+    border-bottom-style: solid;
+}
+
+.introduction {
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4)), url('example.jpg') center/cover no-repeat;
+    padding: 1rem 2rem;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
+    color: #101010;
+    flex: 1;
+    font-size: 127%;
+    text-align: left;
+    font-style: italic;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.introduction iframe {
+    border: none;
+    width: 672px;
+    height: 378px;
+}
+
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.intro-content h1 {
+    margin: 0 0 1rem 0;
+
+}
+
+.intro-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: fit-content;
+    font-weight: 500;
+}
+
+.intro-content button {
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #024892;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+
+.intro-content input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    margin-right: 0.2rem;
+}
+
+.catelogue {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+}
+
+.carCard {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.carCard img {
+    width: 100%;
+    aspect-ratio: 5 / 3;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.carCard h3,
+.carCard p {
+    margin: 1rem 0 0.5rem 0;
+    color: #101010;
+    font-size: larger;
+}
+
+.carCard button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #024892;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.contactsAndApp {
+    background: #024892;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.AppDownload {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+.AppDownload img {
+    width: 120px;
+    height: 35px;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+.contactsAndApp h3 {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+
+footer p {
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 0.5rem 0.5rem 0 0;
+    }
+
+    .contactsAndApp {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introduction {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introduction iframe {
+        width: 100%;
+        height: 350px;
+    }
+
+}
